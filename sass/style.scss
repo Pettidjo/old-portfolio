@@ -1,0 +1,82 @@
+@import "compass";
+@import "compass/reset";
+
+$primary-color: #8FB6DC;
+
+body, html {
+  font-family: 'josefin sans', sans-serif;
+  font-size: 100%;
+  @media screen and (max-width: 992px) {
+    font-size: 90%;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.social-list {
+  z-index: 10;
+  text-align: right;
+  a {
+    margin-right: 15px;
+    svg {
+      transition: .3s all ease-in-out;
+      &:hover {
+        transition: .3s all ease-in-out;
+        transform: translateY(-4px);
+        .facebook-color,
+        .twitter-color,
+        .linkedin-color {
+          fill: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3rem 0 6rem 0;
+  @media screen and (max-width: 576px) {
+    padding: 1rem 0 3rem 0;
+    font-size: 2.4rem;
+  }
+}
+
+@import "keyframes";
+@import "section-1";
+@import "section-2";
+@import "section-3";
+@import "section-4";
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 70px;
+  background-color: #263238;
+  font-size: 1rem;
+  color: #fff;
+  margin-top: 20px;
+  @media screen and (max-width: 576px) {
+    padding-top: 30px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 576px) {
+      margin: 20px 0;
+    }
+    p {
+      margin-right: 15px;
+    }
+  }
+}

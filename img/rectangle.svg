@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1604 858">
+  <defs>
+    <style>
+      .line-color{fill:none;stroke:#fff;stroke-miterlimit:10;}
+    </style>
+  </defs>
+  <path class="line-color" d="M.5 0v857M0 857.5h1604"/>
+</svg>

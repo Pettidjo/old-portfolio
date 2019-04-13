@@ -1,0 +1,72 @@
+// Animation Clouds
+@keyframes cloud_one {
+  from {
+    transform: translateX(-100vw);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes cloud_two {
+  from {
+    transform: translate(-100vw, -20vh);
+  }
+  to {
+    transform: translateX(100vw);
+  }
+}
+
+.move-1 {
+  animation: (cloud_one 150s -10s infinite);
+  opacity: .7;
+}
+
+.move-2 {
+  animation: (cloud_two 100s -15s infinite);
+  opacity: .7;
+}
+
+// Animation rectangle
+
+@keyframes rect {
+  to {
+   stroke-dasharray: 0;
+   stroke-dashoffset: 0;
+ }
+}
+
+//animation Fade-in
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.fade-in {
+  animation-name: fade-in;
+  animation-duration: 3s;
+}
+
+.fade-in-lightbox {
+  animation-name: fade-in;
+  animation-duration: .3s;
+}
+
+.fade-out-lightbox {
+  animation-name: fade-out;
+  animation-duration: 3s;
+}

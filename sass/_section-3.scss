@@ -1,0 +1,29 @@
+.section-3 {
+  background: url('../img/banner2x.jpg');
+  height: 400px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 300;
+  .inner-box {
+    width: 60%;
+    text-align: right;
+    margin: 0 auto;
+    @media screen and (max-width: 992px) {
+      text-align: center;
+      width: 100%;
+    }
+    blockquote {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      @media screen and (max-width: 992px) {
+        padding: 0 1rem;
+      }
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}

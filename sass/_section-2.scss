@@ -1,0 +1,116 @@
+.section-2 {
+  width: 80%;
+  margin: 50px auto;
+  .text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+    .text-block-left {
+      width: 60%;
+    }
+    .text-block-right {
+      width: 40%;
+    }
+    .text-block-left, .text-block-right {
+      padding: 0 1rem;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+      }
+      .text-block {
+        margin-bottom: 4rem;
+      }
+      .text-me p:nth-child(2) {
+        margin-bottom: 1.5rem;
+      }
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+      p {
+        font-size: 1.2rem;
+        font-weight: 300;
+      }
+      .text-parcours {
+        .exp {
+          margin-bottom: 1rem;
+          .date {
+            opacity: .5;
+            font-weight: 300;
+            margin-bottom: .5rem;
+          }
+          .exp-title {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin-bottom: .3rem;
+          }
+          .exp-desc {
+            font-weight: 300;
+            opacity: .6;
+          }
+        }
+      }
+      .myskill-list {
+        list-style-type: circle;
+        padding: 0 0 2rem 2rem;
+        @media screen and (max-width: 768px) {
+          list-style-type: none;
+          padding: 0;
+        }
+        .myskill {
+          line-height: 26px;
+          font-size: 1.2rem;
+          font-weight: 300;
+        }
+      }
+      .btn {
+        color: #000;
+        cursor: pointer;
+        display: block;
+        font-size:16px;
+        font-weight: 300;
+        line-height: 45px;
+        max-width: 180px;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        vertical-align: middle;
+        width: 100%;
+        transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+        @media screen and (max-width: 992px) {
+          margin: 0 auto;
+        }
+        svg {
+          height: 45px;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          rect {
+            fill: none;
+            stroke: #000;
+            stroke-width: 1;
+            transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+            stroke-dasharray: 422, 0;
+          }
+        }
+        &:hover {
+          font-weight: 500;
+          letter-spacing: 1px;
+          rect {
+            stroke: $primary-color;
+            stroke-width: 3;
+            stroke-dasharray: 15, 310;
+            stroke-dashoffset: 18;
+          }
+        }
+      }
+    }
+  }
+}
+
